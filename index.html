@@ -236,6 +236,26 @@
                 max-width: 300px;
             }
         }
+        
+        /* iOS Safari 专用修复 */
+        @supports (-webkit-touch-callout: none) {
+            .pixel-grid {
+                gap: 0;
+                margin: -0.5px;
+            }
+            
+            .pixel {
+                width: 20px;
+                height: 20px;
+                margin: -0.5px;
+                transform: scale(1.01);
+            }
+            
+            /* 修复 hover 在 iOS 上的问题 */
+            .pixel:hover {
+                transform: scale(1.2);
+            }
+        }
     </style>
 </head>
 <body>
