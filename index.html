@@ -237,6 +237,23 @@
             }
         }
         
+        /* 小屏幕手机优化 */
+        @media (max-width: 480px) {
+            .cats-container {
+                gap: 15px;
+            }
+            
+            .cat-card {
+                width: calc(50% - 7.5px);
+                padding: 10px;
+            }
+            
+            .cat-title {
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
+        }
+
         /* iOS Safari 专用修复 */
         @supports (-webkit-touch-callout: none) {
             .pixel-grid {
